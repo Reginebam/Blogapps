@@ -1,18 +1,32 @@
-import React from "react";
-import PropTypes from "propstypes";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { postArray } from "./Posts";
+import Post from "./Post";
 
-function Home() {
 
-return(
+
+const Home = (props) => {
+const [posts, setPosts]= useState(postArray);
+    return( 
+
 <div>
-    blog2
-</div>
 
-)
+{
+    posts.map((post)=>{
+return <Post key={post.id} post={post}/>
 
 
+
+
+
+    })
 }
 
+</div>
+
+
+    )
+};
 
 
 

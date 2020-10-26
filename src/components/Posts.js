@@ -1,3 +1,4 @@
+export const postArray =
 [
 
     {"id": 1,
